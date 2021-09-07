@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Canvas Drawingboard</title>
+</head>
+<body>
+  <div class="drawboardHeader">
+    <div class="styleButtons">
+      <button class="pen line active">线</button>
+      <button class="pen rect">矩形</button>
+      <button class="pen arc">圆形</button>
+      <button class="pen era">橡皮擦</button>
+      <button class="width thin active"></button>
+      <button class="width normal"></button>
+      <button class="width thick"></button>
+      <span>颜色：<input type="color" name="color" id="color"/></span>
+    </div>
+    <div class="finishButtons">
+      <button class="clearCanvas">清空</button>
+      <button class="saveCanvas">保存</button>
+    </div>
+  </div>
+  <canvas id="drawCanvas"></canvas>
+  <script src="./main.ts"></script>
+</body>
+</html>

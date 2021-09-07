@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas Scratchcard</title>
+  <style>
+     .container {
+      text-align: center;
+      margin-top: 120px;
+    }
+    .box{
+      width: 100%;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+    }
+    #result{
+      width: 600px;
+      height: 200px;
+      text-align: center;
+      color: deeppink;
+      font-size: 50px;
+      line-height: 200px;
+    }
+    #cardCanvas{
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Canvas 刮刮卡</h1>
+    <div class="box">
+      <div id="result">谢谢惠顾</div>
+      <canvas id="cardCanvas" width="600px" height="200" ></canvas>
+      <canvas id="wordsCanvas" width="600px" height="200" ></canvas>
+    </div>
+  </div>
+  <script src="./main.ts"></script>
+</body>
+</html>

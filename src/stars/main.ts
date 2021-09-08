@@ -16,6 +16,8 @@ window.onresize = function () {
   // 赋值给canvas
   starsCanvas.height = ah;
   starsCanvas.width = aw;
+  starsCtx.fillStyle = "white";
+  starsCtx.strokeStyle = "white";
 };
 
 starsCtx.fillStyle = "white";

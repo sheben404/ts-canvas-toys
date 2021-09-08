@@ -1,6 +1,13 @@
 const snakeCanvas = document.getElementById("snakeCanvas") as HTMLCanvasElement;
+const startBtn = document.getElementById("startBtn")
 const snakeCtx = snakeCanvas.getContext("2d");
 const gridSize = 20;
+snakeCtx.strokeRect(
+  0,
+  0,
+  Number(snakeCanvas.getAttribute("width")),
+  Number(snakeCanvas.getAttribute("height"))
+);
 
 function draw() {
   // 定义一个全局的是否吃到食物的一个变量
@@ -74,6 +81,7 @@ function draw() {
         if (con) {
           draw();
         }
+        startConfirm = true
         return;
       }
       this.head.draw();
@@ -204,4 +212,14 @@ function draw() {
     animate();
   }, 100);
 }
-draw();
+
+startBtn.onclick = ()=>{
+  startConfirm = true
+  draw()
+}
+
+let startConfirm = confirm('是否开始游戏?')
+if(startConfirm){
+  draw();
+}
+

@@ -1,8 +1,12 @@
 {
   "name": "ts-canvas-toys",
   "version": "1.0.0",
-  "main": "index.js",
+  "source":"index.html",
   "license": "MIT",
+  "scripts": {
+    "start":"parcel",
+    "build":"parcel build"
+  },
   "devDependencies": {
     "parcel": "^2.0.0-rc.0"
   }
